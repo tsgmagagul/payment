@@ -3,19 +3,31 @@
     <head>
         <title>Make Payment</title>
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script> 
+        <link href="index.js"/>
+        </script>
     </head>
     <body>
         <div class="container">
             <h1>Card Payment</h1>
             <div class="card">
-
-           
+              
+                <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:blue; width: 10px;" aria-hidden="true"></i><br>
+                    <i class="fa fa-cc-mastercard" style="color:red; width: 10px" aria-hidden="true"></i>   
+                </div>
+              
 <label>Name on Card:</label><br>
 <input placeholder="Enter Name on Card" class="input"><br>
 <label>Card Number:</label><br>
 <input placeholder="Enter Card Number" class="input"><br>
+<div class="input-group">
+
+
 <label>CVV:</label><br>
-<input type="number"placeholder="cvv" min="3" max="3" class="input"><br>
+<input type="number"placeholder="card cvv" min="3" max="3" class="input"><br>
 <label>Date:</label><br>
 <select  class="selection">
     <option>1</option>
@@ -31,6 +43,8 @@
     <option>11</option>
     <option>12</option>
 </select>
+<br>
+<br>
 <select class="selection">
     <option>2023</option>
     <option>2024</option>
@@ -51,12 +65,10 @@
 <br>
 <br>
 </div>
-
+</div>
 <div class="btn-container">
     <button class="button">PAY</button>
 </div>
-
-<!-- <input placeholder="Date" class="date"> -->
 
 
         </div>
